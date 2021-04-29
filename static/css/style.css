@@ -202,3 +202,11 @@ footer {
   pointer-events: none;
   cursor: default;
 }
+
+.bg-primary {
+  background-color: #0a66c2;
+}
+
+.text-muted {
+  color: black !important;
+}
