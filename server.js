@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000
 
 app.use(express.json());
-app.use(express.static("express"));
+app.use(express.static("static"));
 app.use('/', function(req,res){
     res.sendFile(path.join(__dirname+'/express/index.html'));
   });
