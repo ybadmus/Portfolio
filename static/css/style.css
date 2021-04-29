@@ -1,0 +1,204 @@
+/* Style Sheet */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/Roboto/Roboto-Regular.ttf");
+}
+
+:root {
+  --primary-color: #0a66c2;
+  --dark-color: #0e0e0e;
+  --gray-color: #d3d3d3;
+  --gray-60-color: #2120204d;
+  --white-transparent: #f6f7f726;
+  --primary-transparent: #ec53423b;
+}
+
+body {
+  background: #0e0e0e url(../assets/2542.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Roboto, Arial, sans-serif !important;
+  font-size: 100%;
+}
+
+/* GLOBALS */
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: Roboto, Arial, sans-serif !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--gray-color) !important;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color) !important;
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: bolder;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+footer {
+  margin: auto !important;
+  display: block !important;
+}
+
+/* COLORS */
+
+.c-primary {
+  color: var(--primary-color) !important;
+}
+
+.c-dark {
+  color: var(--dark-color);
+}
+
+.c-gray {
+  color: var(--gray-color);
+}
+
+.bg-primary_ {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-dark {
+  background-color: var(--dark-color);
+}
+
+.bg-gray {
+  background-color: var(--gray-color);
+}
+
+.bg-w-transparent {
+  background-color: var(--white-transparent);
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.col-sm,
+.col-sm-2,
+.col-sm-6,
+.col-sm-8,
+.col-sm-4 {
+  padding: 0;
+}
+
+.my-exp {
+  cursor: pointer;
+}
+
+.my-exp:hover {
+  cursor: pointer;
+  background-color: var(--primary-transparent);
+  transition: 0.5s;
+}
+
+.col-gap {
+  column-gap: 1.5rem;
+}
+
+.img-container {
+  background-color: var(--primary-transparent);
+}
+
+.img-container img {
+  opacity: 0.6;
+}
+
+.img-container img:hover {
+  opacity: 0.8;
+  transition: 1s;
+}
+
+.info_project {
+  background: #fff;
+  position: absolute;
+  left: 0;
+  width: 85%;
+  top: 25%;
+  border-radius: 4px;
+  box-shadow: 0px 10px 30px rgba(255, 253, 253, 0.15);
+  color: #0e0e0e;
+  padding: 10px;
+}
+
+.user_pic img {
+  border-radius: 50%;
+  height: 280px;
+  width: 270px;
+  display: inline-block;
+  overflow: hidden;
+  line-height: 1;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.home {
+  margin-top: 50px;
+}
+
+.progress {
+  height: 7px;
+}
+
+.card {
+  margin-bottom: 3px;
+}
+
+.myaccordion {
+  width: 100%;
+  margin: 30px auto;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.myaccordion .card,
+.myaccordion .card:last-child .card-header {
+  border: none;
+}
+
+.myaccordion .card-header {
+  border-bottom-color: #0e0e0e;
+  background: transparent;
+}
+
+.myaccordion .fa-stack {
+  font-size: 18px;
+}
+
+.myaccordion .btn {
+  width: 100%;
+  color: var(--primary-color);
+  padding: 0;
+}
+
+.myaccordion .btn-link:hover,
+.myaccordion .btn-link:focus {
+  text-decoration: none;
+}
+
+.myaccordion li + li {
+  margin-top: 10px;
+}
+
+.private-repo  {
+  pointer-events: none;
+  cursor: default;
+}
